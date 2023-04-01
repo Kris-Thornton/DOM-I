@@ -63,6 +63,10 @@ navLinks.forEach((link, idx) => {
   link.textContent = navLinkTexts[idx]
   link.classList.add('italic')
 })
+
+
+
+
 // const newNav = document.querySelectorAll('nav a')
 
 
