@@ -57,23 +57,29 @@ boldFooter.textContent = siteContent.footer.copyright
 boldFooter.classList.add('bold')
 
 // navagation
-const newNav = document.querySelectorAll('nav a')
+const navLinks = document.querySelectorAll('header nav a')
+const navLinkTexts = Object.values(siteContent.nav)
+navLinks.forEach((link, idx) => {
+  link.textContent = navLinkTexts[idx]
+  link.classList.add('italic')
+})
+// const newNav = document.querySelectorAll('nav a')
 
 
 
-newNav.forEach(aTag => aTag.classList.add('italic'))
+// newNav.forEach(aTag => aTag.classList.add('italic'))
 
 
-newNav[0].textContent = 'Services'
-newNav[1].textContent = 'Products'
-newNav[2].textContent = 'Vision'
-newNav[3].textContent = 'Features'
-newNav[4].textContent = 'About'
-newNav[5].textContent = 'Contact'
+// newNav[0].textContent = 'Services'
+// newNav[1].textContent = 'Products'
+// newNav[2].textContent = 'Vision'
+// newNav[3].textContent = 'Features'
+// newNav[4].textContent = 'About'
+// newNav[5].textContent = 'Contact'
 
 
 
-console.log(newNav)
+// console.log(newNav)
 
 // text contents
 
