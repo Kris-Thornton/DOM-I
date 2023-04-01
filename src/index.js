@@ -40,3 +40,79 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+
+// images
+const logoImg = document.querySelector('#logo-img')
+logoImg.src = siteContent.images['logo-img'];
+const ctaImg = document.querySelector('#cta-img')
+ctaImg.src = siteContent.images['cta-img']
+const middleImg = document.querySelector('.middle-img')
+middleImg.src = siteContent.images['accent-img']
+
+
+// footer link
+const boldFooter = document.querySelector('footer a')
+boldFooter.textContent = siteContent.footer.copyright
+boldFooter.classList.add('bold')
+
+// navagation
+const newNav = document.querySelectorAll('nav a')
+
+
+
+newNav.forEach(aTag => aTag.classList.add('italic'))
+
+
+newNav[0].textContent = 'Services'
+newNav[1].textContent = 'Products'
+newNav[2].textContent = 'Vision'
+newNav[3].textContent = 'Features'
+newNav[4].textContent = 'About'
+newNav[5].textContent = 'Contact'
+
+
+
+console.log(newNav)
+
+// text contents
+
+const newHone = document.querySelector('h1')
+console.log(newHone)
+newHone.textContent = 'DOM Is Awesome';
+
+
+const GStartedB = document.querySelector('div button')
+GStartedB.textContent = 'Get Started';
+console.log(GStartedB)
+
+const h4Text = document.querySelectorAll('.text-content h4');
+const h4PText = document.querySelectorAll('.text-content p');
+// h4Text.forEach(h4fill => h4fill.classList.add('newClassName'))
+
+h4Text[0].textContent = siteContent['main-content']['features-h4'];
+h4PText[0].textContent = siteContent['main-content']['features-content'];
+
+h4Text[1].textContent = siteContent['main-content']['about-h4'];
+h4PText[1].textContent = siteContent['main-content']['about-content'];
+
+h4Text[2].textContent = siteContent['main-content']['services-h4'];
+h4PText[2].textContent = siteContent['main-content']['services-content'];
+
+h4Text[3].textContent = siteContent['main-content']['product-h4'];
+h4PText[3].textContent = siteContent['main-content']['product-content'];
+
+h4Text[4].textContent = siteContent['main-content']['vision-h4'];
+h4PText[4].textContent = siteContent['main-content']['vision-content'];
+
+// Contact
+const newContact = document.querySelector('.contact h4');
+const newContactFill = document.querySelectorAll('.contact p')
+console.log(newContactFill)
+
+newContact.textContent = siteContent['contact']['contact-h4']
+newContactFill[0].textContent = siteContent['contact']['address']
+newContactFill[1].textContent = siteContent['contact']['phone']
+newContactFill[2].textContent = siteContent['contact']['email']
+console.log(h4Text)
+
